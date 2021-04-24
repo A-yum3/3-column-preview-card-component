@@ -68,10 +68,6 @@ select {
   }
 }
 
-* {
-  border: 1px solid red;
-}
-
 body {
   font-size: 15px;
 }
