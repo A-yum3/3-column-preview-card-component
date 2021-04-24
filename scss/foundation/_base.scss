@@ -1,0 +1,42 @@
+$bright-orange: hsl(31, 77%, 52%);
+$dark-cyan: hsl(184, 100%, 22%);
+$very-dark-cyan: hsl(179, 100%, 13%);
+
+$paragraph-color: hsla(0, 0%, 100%, 0.75);
+$very-light-gray: hsl(0, 0%, 95%);
+
+@import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap");
+
+$font-lex: "Lexend Deca", sans-serif;
+$font-shoulder: "Big Shoulders Display", cursive;
+
+@mixin pc {
+  @media screen and (min-width: 768px) {
+    @content;
+  }
+}
+
+@mixin sp {
+  @media screen and (max-width: 767px) {
+    @content;
+  }
+}
+
+$sp-width: 375px;
+$pc-width: 1440px;
+
+* {
+  border: 1px solid red;
+}
+
+body {
+  font-size: 15px;
+
+  @include pc {
+    width: $pc-width;
+  }
+
+  @include sp {
+    width: $sp-width;
+  }
+}

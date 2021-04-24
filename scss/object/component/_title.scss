@@ -1,0 +1,12 @@
+.c-title {
+  font-family: $font-shoulder;
+  color: $very-light-gray;
+  font-size: 2rem;
+  text-transform: uppercase;
+  padding-top: 35px;
+
+  @include sp {
+    padding-top: 40px;
+    font-size: 36px;
+  }
+}

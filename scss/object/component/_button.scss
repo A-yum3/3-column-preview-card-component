@@ -1,0 +1,14 @@
+.c-button {
+  background-color: white;
+  border: white 2px solid;
+  padding: 15px 25px;
+  border-radius: 50px;
+  text-decoration: none;
+  font-size: 12px;
+  font-family: $font-lex;
+
+  @include sp {
+    font-size: 15px;
+    padding: 13px 30px;
+  }
+}
